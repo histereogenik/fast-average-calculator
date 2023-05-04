@@ -1,0 +1,72 @@
+@mainBgColor: #0984e3;
+@buttonColor: #74b9ff;
+@mainFont:'Source Code Pro', monospace;
+
+.font {
+    font-family: @mainFont;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+body {
+    background-color: @mainBgColor;
+    font-family: @mainFont;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+.getValues {
+    margin: 16px auto;
+    input {
+        .font();
+        padding: 16px;
+        max-width: 120px;
+        text-align: center;
+    }
+}
+
+button {
+    .font();
+    padding: 15px;
+    background-color: @buttonColor;
+    border: 3px solid @buttonColor;
+    cursor: pointer;
+    transition: all ease .2s;
+    &:hover {
+        transform: scale(1.1);
+        color: #fff;
+    }
+}
+
+#btnReset {
+    padding: 8px;
+    background-color: #d63031;
+    border: none;
+}
+
+#averageForm {
+    margin-top: 16px;
+}
+
+.displays {
+    font-size: 0.9em;
+    margin-top: 36px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Average</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@CSS_ADDRESS">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Fast Average Calculator</h1>
+            <form id="getValuesForm">
+                <label for="userValue">Insert a value:</label>
+                <div class="getValues">
+                    <input type="number" id="userValue" step="0.1" min="0" max="10" autocomplete="off" required>
+                    <button type="submit" id="plusValue">+</button>
+                </div>
+                <button type="reset" id="btnReset">reset</button>
+            </form>
+            <form id="averageForm">
+                <button type="submit" id="getAverage">Average</button>
+            </form>
+            <div class="displays">
+                <span id="errorDisplay"></span>
+            </div>
+            <div class="displays">
+                Values: <span id="arrayDisplay"></span>
+            </div>
+            <div class="displays">
+                Average: <span id="averageDisplay"></span>
+            </div>
+        </main>
+    </div>
+
+    <script src="@@JS_ADDRESS"></script>
+</body>
+</html>
